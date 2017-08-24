@@ -17,11 +17,8 @@ def verify():
             return "Verification token mismatch", 403
         return request.args["hub.challenge"], 200
 
-<<<<<<< HEAD
-    return "Hello world", 200
-=======
     return "This is a webhook for 7H", 200
->>>>>>> a3713a7bd4f26e8ca03db3abd798cea3966c6a89
+
 
 
 @app.route('/', methods=['POST'])
